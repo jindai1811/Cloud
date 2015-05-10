@@ -18,6 +18,7 @@ public interface PrescriptionServer {
      * @return Json
      */
     @RequestMapping(value = "/prescription/{appid}/{content}", method = RequestMethod.GET)
-    public Map<String, String> businessLogin(@PathVariable("appid") String appid,@PathVariable("content") String content,@RequestHeader("accessToken")String accessToken);
+    public Map<String, String> businessLogin(@PathVariable("appid") String appid,@PathVariable("content") String content);
+
 
 }
